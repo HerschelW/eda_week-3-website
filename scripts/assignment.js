@@ -23,9 +23,11 @@ log(arr[2]);
 
 log("4. Remove the last item in the array, then console log the array");
 arr.pop();
+log(arr);
 
 log("5. Add the value of number 15 to the end of the array");
 arr.push(15);
+log(arr);
 
 log("6. Write a `for` loop that console logs each value in the array");
 for (let i = 0; i < arr.length; i++) {
@@ -39,12 +41,14 @@ log(
 );
 while (myValue < 10) {
    myValue++;
+   log(myValue);
 }
 
 log(
    "8. Change the second value in the array from 6 to 20, then console log the array"
 );
 arr[1] = 20;
+log(arr);
 
 log("9. Below, rewrite the `for` loop from question 6 to a `for of` loop");
 for (let i of arr) {
@@ -75,7 +79,7 @@ log("11. Calculate (and console log) the sum of the numbers in the array.");
 log(
    numbersArray.reduce(function (a, b) {
       return a + b;
-   }, 0)
+   })
 );
 
 //ES6 Arrow method:
